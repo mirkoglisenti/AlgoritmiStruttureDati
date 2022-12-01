@@ -152,10 +152,13 @@ class EC:
 parser = argparse.ArgumentParser(description="Script Exact Cover")
 parser.add_argument("-I", "--input", type=str, help="Nome del file di input (aaa.txt)", default="input.txt")
 parser.add_argument("-O", "--output", type=str, help="Nome del file di output (aaa.txt)", default="output.txt")
-parser.add_argument("-P", "--plus", type=lambda x:bool(strtobool(x)), help="EC plus", nargs='?', default=False, const=True)
+parser.add_argument("-P", "--plus", type=lambda x: bool(strtobool(x)), help="EC plus", nargs='?', default=False,
+                    const=True)
 args = parser.parse_args()
 
-if __name__ == '__main__':
+
+#if __name__ == '__main__':
+def main():
     M_size = 0
     file = open(args.input, "r")
     A = []
@@ -196,12 +199,16 @@ if __name__ == '__main__':
     file.write(';;;Cardinalità di M: ' + str(m) + '\n')
     file.write(';;;Cardinalità di N: ' + str(n) + '\n')
     idx = 1
-    for x in A:
+    for x in A[1:]:
+        x = x[1:]
         file.write(';;; Insieme ' + str(idx) + '\n' + str(x) + '\n')
         idx += 1
     file.write('\n;;; COV:\n')
-    for x in ec.COV:
-        file.write(str(x) + '\n')
+    if ec.COV == []:
+        file.write(';;; Nessuna copertura esatta trovata\n')
+    else:
+        for x in ec.COV:
+            file.write(str(x) + '\n')
     if args.plus:
         file.write('\n;;; Algoritmo EC+\n')
     else:
@@ -211,3 +218,5 @@ if __name__ == '__main__':
     file.write(';;; Visited nodes: ' + str(ec.visitedNodes) + ' \n')
     file.write(';;; Percentage of nodes visited: ' + str(round((ec.visitedNodes / ec.totalNodes) * 100, 2)) + ' \n')
     file.close()
+
+    return execution_time, ec.visitedNodes;

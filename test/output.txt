@@ -1,0 +1,32 @@
+;;;Cardinalità di M: 8
+;;;Cardinalità di N: 10
+;;; Insieme 1
+[0 0 0 0 0 0 0 0 0 0 0]
+;;; Insieme 2
+[0 1 0 1 0 0 0 0 0 0 1]
+;;; Insieme 3
+[0 0 0 0 1 0 0 1 1 1 0]
+;;; Insieme 4
+[0 0 1 0 1 0 0 0 1 0 0]
+;;; Insieme 5
+[0 0 1 0 0 1 1 0 0 0 0]
+;;; Insieme 6
+[0 0 0 0 0 1 1 1 0 1 0]
+;;; Insieme 7
+[0 0 1 1 0 0 0 0 0 0 1]
+;;; Insieme 8
+[0 1 0 0 0 1 1 0 0 0 0]
+;;; Insieme 9
+[0 1 0 0 1 0 0 0 1 0 0]
+
+;;; COV:
+[4 2 1]
+[5 3 1]
+[7 6 2]
+[8 6 5]
+
+;;; Algoritmo EC+
+;;; Execution time: 0.461 ms
+;;; Total nodes: 256 
+;;; Visited nodes: 40 
+;;; Percentage of nodes visited: 15.62 
