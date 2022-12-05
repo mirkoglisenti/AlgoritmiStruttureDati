@@ -16,13 +16,21 @@ if __name__ == '__main__':
     P = args.probability
 
     A = np.empty((N, M), dtype=int)
+    init = 0
 
-    for i in range(0, N):
+    # if M <= N:
+    #     A[0:M] = np.eye(M, dtype=int)
+    #     init = M
+
+    for i in range(init, N):
         # nums = np.ones(M, dtype=int)
         # nums[:int(M / 2)] = 0
         # np.random.shuffle(nums)
 
-        nums = np.random.binomial(1, P, M)  # Distrubizione binomiale con percentuale 0.5 che esca 0 oppure 1
+        nums = np.random.binomial(1, P, M)  # Distribuzione binomiale con percentuale P che esca 0 oppure 1
+
+        while (nums == np.zeros(M)).all():
+            nums = np.random.binomial(1, P, M)
 
         A[i] = nums
 

@@ -219,4 +219,4 @@ def main():
     file.write(';;; Percentage of nodes visited: ' + str(round((ec.visitedNodes / ec.totalNodes) * 100, 2)) + ' \n')
     file.close()
 
-    return execution_time, ec.visitedNodes;
+    return execution_time, ec.visitedNodes

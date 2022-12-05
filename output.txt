@@ -1,49 +1,19 @@
-;;;Cardinalità di M: 19
-;;;Cardinalità di N: 19
+;;;Cardinalità di M: 4
+;;;Cardinalità di N: 4
 ;;; Insieme 1
-[1 1 0 1 0 0 1 0 0 1 0 1 1 0 1 0 1 1 1]
+[1 0 0 0]
 ;;; Insieme 2
-[0 1 0 0 1 0 1 1 1 0 0 1 0 1 0 1 0 0 0]
+[1 0 0 0]
 ;;; Insieme 3
-[1 1 0 0 1 1 1 0 0 1 1 1 0 0 0 1 0 0 0]
+[0 1 0 0]
 ;;; Insieme 4
-[1 0 0 0 0 1 0 1 1 1 1 1 0 0 1 1 0 1 1]
-;;; Insieme 5
-[0 1 1 1 1 0 1 1 1 1 0 0 0 0 0 0 0 1 0]
-;;; Insieme 6
-[0 0 1 0 1 0 0 0 1 1 0 1 1 0 1 0 0 1 0]
-;;; Insieme 7
-[1 1 1 0 0 1 0 1 0 0 0 0 1 1 1 1 0 1 1]
-;;; Insieme 8
-[0 0 1 1 0 1 1 1 0 0 1 0 1 0 1 0 0 1 1]
-;;; Insieme 9
-[0 0 0 1 1 0 1 0 1 1 0 0 1 0 0 1 0 0 1]
-;;; Insieme 10
-[0 1 0 1 0 0 0 1 1 1 1 0 0 1 1 0 1 0 0]
-;;; Insieme 11
-[0 0 1 0 1 0 0 0 1 1 1 1 0 1 0 0 0 0 1]
-;;; Insieme 12
-[0 0 0 0 1 1 1 1 1 0 0 0 0 1 0 0 0 1 1]
-;;; Insieme 13
-[0 1 0 1 1 0 0 0 1 0 1 0 1 0 1 0 1 1 1]
-;;; Insieme 14
-[1 0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1 0]
-;;; Insieme 15
-[0 1 0 0 0 0 0 1 1 0 1 1 1 0 1 0 1 0 0]
-;;; Insieme 16
-[0 1 1 0 1 0 0 1 1 1 1 0 1 1 0 0 0 0 0]
-;;; Insieme 17
-[1 1 0 1 0 1 1 1 1 1 1 0 1 0 1 1 0 0 0]
-;;; Insieme 18
-[0 0 1 1 1 0 1 1 0 1 0 0 0 0 0 1 1 1 1]
-;;; Insieme 19
-[1 1 0 1 0 0 0 1 1 1 1 1 0 1 1 1 0 0 0]
+[1 1 1 0]
 
 ;;; COV:
 ;;; Nessuna copertura esatta trovata
 
 ;;; Algoritmo EC
-;;; Execution time: 1.527 ms
-;;; Total nodes: 524288 
-;;; Visited nodes: 190 
-;;; Percentage of nodes visited: 0.04 
+;;; Execution time: 0.182 ms
+;;; Total nodes: 16 
+;;; Visited nodes: 10 
+;;; Percentage of nodes visited: 62.5 
