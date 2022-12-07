@@ -158,7 +158,7 @@ args = parser.parse_args()
 
 
 #if __name__ == '__main__':
-def main():
+def main(ecplus = False):
     M_size = 0
     file = open(args.input, "r")
     A = []
@@ -185,10 +185,11 @@ def main():
 
     start = time.time()
 
-    if args.plus:
+    if args.plus or ecplus:
         ec = EC(A, True)
     else:
         ec = EC(A, False)
+
     ec.run()
 
     end = time.time()
