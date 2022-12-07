@@ -48,7 +48,11 @@ Li riporto qua sotto e poi andrò ad analizzarli.
 
 
 In tutti i grafici qua sopra riportati bisogna verificare l'andamento della curva verde.
-Notiamo come non sembra in alcun modo 
+Notiamo come non sembra in alcun modo tendere ad un comportamento esponenziale, piuttosto ad uno lineare
+ma questo è dovuto alla casualità della generazione dei file di input e quindi rende in parte vana l'analisi
+di questa misura temporale. In ogni caso è interessante analizzare come ad input casuali corrispondano comunque sempre
+tempi lineari e nell'ordine dei millisecondi. L'analisi è stata svolta con cardinalità massime di N e M pari a 7 in quanto
+tentare di lanciare l'algoritmo con delle grandezze massime maggiori comportava una eccezione di segmentation fault.
 
 ### Numero di nodi visitati
 
