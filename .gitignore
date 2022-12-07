@@ -6,3 +6,6 @@ __pycache__*
 README_ML.md
 old*
 test*
+*.txt
+auto.py
+Readme-input.md

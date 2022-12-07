@@ -2,7 +2,9 @@ import argparse
 import numpy as np
 import time
 from distutils.util import strtobool
+import sys
 
+sys.setrecursionlimit(2147483647)
 
 class EC:
     def __init__(self, A, plus):
@@ -173,12 +175,12 @@ if __name__ == '__main__':
             A.append(elements)
 
     A = np.array(A)
-    m, n = A.shape
+    n, m = A.shape
 
-    x = np.zeros((1, n), dtype=int)
+    x = np.zeros((1, m), dtype=int)
     A = np.vstack((x, A))
 
-    y = np.zeros((m + 1, 1), dtype=int)
+    y = np.zeros((n + 1, 1), dtype=int)
     A = np.column_stack((y, A))
 
     file.close()

@@ -23,10 +23,6 @@ if __name__ == '__main__':
     #     init = M
 
     for i in range(init, N):
-        # nums = np.ones(M, dtype=int)
-        # nums[:int(M / 2)] = 0
-        # np.random.shuffle(nums)
-
         nums = np.random.binomial(1, P, M)  # Distribuzione binomiale con percentuale P che esca 0 oppure 1
 
         equal = False
@@ -43,6 +39,8 @@ if __name__ == '__main__':
             for element in A:
                 if (nums == element).all():
                     equal = True
+                    print('Sono bloccato')
+                    print(A.size)
 
         A[i] = nums
 
