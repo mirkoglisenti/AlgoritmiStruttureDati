@@ -157,8 +157,8 @@ parser.add_argument("-P", "--plus", type=lambda x: bool(strtobool(x)), help="EC 
 args = parser.parse_args()
 
 
-#if __name__ == '__main__':
-def main(ecplus = False):
+if __name__ == '__main__':
+#def main(ecplus = False):
     M_size = 0
     file = open(args.input, "r")
     A = []
@@ -185,7 +185,8 @@ def main(ecplus = False):
 
     start = time.time()
 
-    if args.plus or ecplus:
+    #if args.plus or ecplus:
+    if args.plus:
         ec = EC(A, True)
     else:
         ec = EC(A, False)
@@ -220,4 +221,4 @@ def main(ecplus = False):
     file.write(';;; Percentage of nodes visited: ' + str(round((ec.visitedNodes / ec.totalNodes) * 100, 2)) + ' \n')
     file.close()
 
-    return execution_time, ec.visitedNodes
+    #return execution_time, ec.visitedNodes

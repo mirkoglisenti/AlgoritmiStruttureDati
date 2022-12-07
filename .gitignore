@@ -1,7 +1,8 @@
 Massi*
 venv*
 __pycache__*
-bk.txt
+old/bk.txt
 .idea*
 .DS_STORE*
 README_ML.md
+old*

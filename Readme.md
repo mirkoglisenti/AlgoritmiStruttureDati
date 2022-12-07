@@ -5,9 +5,26 @@ Progetto per il corso "Algoritmi e Strutture Dati" per la laurea magistrale in I
 ## Indice
 
 <!-- TOC -->
-* [Progetto Algoritmi e Strutture Dati](#progetto-algoritmi-e-strutture-dati)
-  * [Indice](#indice)
+* [Obiettivo del progetto](#obiettivo-del-progetto)
+* [Implementazione](#implementazione)
+* [Fasi del progetto](#fasi-del-progetto)
+* [Test](#test)
+* [Grafici](#grafici)
+  * [Tempo di esecuzione](#tempo-di-esecuzione)
+  * [Numero di nodi visitati](#numero-di-nodi-visitati)
+* [Conclusioni](#conclusioni)
 <!-- TOC -->
+
+## Obiettivo del progetto
+
+
+
+## Implementazione
+
+
+## Fasi del progetto
+
+## Test
 
 ## Grafici
 
@@ -80,5 +97,12 @@ tentare di lanciare l'algoritmo con delle grandezze massime maggiori comportava 
 |:-----------------------------:|:---------------------------------:|
 |  *EC (cardinalità di M = 7)*  |   *EC+ (cardinalità di M = 7)*    |
 
+Anche in questi grafici prendiamo in considerazione la curva verde. Notiamo come, all'aumentare della
+cardinalità di M, la curva verde tende ad approssimarsi molto bene alla curva blu ($N^2$). Questo è in linea
+con le ipotesi teoriche in quanto il ciclo utilizzato dall'algoritmo dovrà verificare, in sintesi, tutte le coppie (in realtà 
+non sono esattamente presi a coppie ma cerchiamo di mantenere il concetto semplice) di elementi dell'insieme N, questo va ad 
+approssimarsi molto bene con la grandezza $N^2$.
+
+## Conclusioni
 
 &copy; Glisenti Mirko - Università degli Studi di Brescia (2022)

@@ -29,8 +29,20 @@ if __name__ == '__main__':
 
         nums = np.random.binomial(1, P, M)  # Distribuzione binomiale con percentuale P che esca 0 oppure 1
 
-        while (nums == np.zeros(M)).all():
+        equal = False
+
+        for element in A:
+            if(nums == element).all():
+                equal = True
+
+        while (nums == np.zeros(M)).all() or equal == True:
             nums = np.random.binomial(1, P, M)
+
+            equal = False
+
+            for element in A:
+                if (nums == element).all():
+                    equal = True
 
         A[i] = nums
 
