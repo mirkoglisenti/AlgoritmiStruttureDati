@@ -39,10 +39,11 @@ if __name__ == '__main__':
             for element in A:
                 if (nums == element).all():
                     equal = True
-                    print('Sono bloccato')
-                    print(A.size)
+                    #print('Sono bloccato')
+                    #print(A.size)
 
         A[i] = nums
+    #print(A.size)
 
     with open(args.input, 'w') as f:
         f.write(';;; Cardinalità M: ' + str(M) + '\n;;; Cardinalità N: ' + str(N) + '\n;;; Probabilità P: ' + str(P))
