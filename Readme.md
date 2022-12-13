@@ -140,6 +140,13 @@ efficiente di matrici e vettori e che rende disponibili diverse funzioni per le 
 
 ## Test
 
+Ho eseguito vari test automatici per verificare il corretto funzionamento degli algoritmi EC
+ed EC+ e ho eseguito test per valori di M da $2$ a $20$ e valori di N da $2$ a `min(2^n, 5000)`.
+I risultati di questi test sono rappresentati nei grafici qua sotto. Mi sono assicurato di realizzare
+lo script generatore di file di input in modo che generi tutte righe della matrice A univoche
+e che la riga contenente solo zeri non potesse essere generata, così da assicurarmi risultati
+temporali veritieri e non totalmente influenzati dal contenuto del file di input.
+
 ## Grafici
 
 Ho creato vari grafici per riportare il numero di nodi visitati (rappresentanti una sorta di complessità spaziale nel caso pessimo)

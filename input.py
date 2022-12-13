@@ -18,10 +18,6 @@ if __name__ == '__main__':
     A = np.empty((N, M), dtype=int)
     init = 0
 
-    # if M <= N:
-    #     A[0:M] = np.eye(M, dtype=int)
-    #     init = M
-
     for i in range(init, N):
         nums = np.random.binomial(1, P, M)  # Distribuzione binomiale con percentuale P che esca 0 oppure 1
 
@@ -39,11 +35,8 @@ if __name__ == '__main__':
             for element in A:
                 if (nums == element).all():
                     equal = True
-                    #print('Sono bloccato')
-                    #print(A.size)
 
         A[i] = nums
-    #print(A.size)
 
     with open(args.input, 'w') as f:
         f.write(';;; Cardinalità M: ' + str(M) + '\n;;; Cardinalità N: ' + str(N) + '\n;;; Probabilità P: ' + str(P))
