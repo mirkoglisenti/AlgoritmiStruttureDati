@@ -201,20 +201,20 @@ Li riporto qua sotto e poi andrò ad analizzarli.
 | *EC (cardinalità di M = 11)* |  *EC+ (cardinalità di M = 11)*  |
 
 | ![](./img/ec_exec_M_12.png)  | ![](./img/ecplus_exec_M_12.png) |
-|:----------------------------:|:------------------------------:|
-| *EC (cardinalità di M = 12)* | *EC+ (cardinalità di M = 12)*  |
+|:----------------------------:|:-------------------------------:|
+| *EC (cardinalità di M = 12)* |  *EC+ (cardinalità di M = 12)*  |
 
-| ![](./img/ec_exec_M_13.png) | ![](./img/ecplus_exec_M_13.png) |
-|:---------------------------:|:-------------------------------:|
+| ![](./img/ec_exec_M_13.png)  | ![](./img/ecplus_exec_M_13.png) |
+|:----------------------------:|:-------------------------------:|
 | *EC (cardinalità di M = 13)* |  *EC+ (cardinalità di M = 13)*  |
 
-| ![](./img/ec_exec_M_14.png) | ![](./img/ecplus_exec_M_14.png) |
-|:---------------------------:|:-------------------------------:|
-| *EC (cardinalità di M = 14)* |  *EC+ (cardinalità di M = 14)*   |
+| ![](./img/ec_exec_M_14.png)  | ![](./img/ecplus_exec_M_14.png) |
+|:----------------------------:|:-------------------------------:|
+| *EC (cardinalità di M = 14)* |  *EC+ (cardinalità di M = 14)*  |
 
-| ![](./img/ec_exec_M_15.png) | ![](./img/ecplus_exec_M_15.png) |
-|:---------------------------:|:------------------------------:|
-| *EC (cardinalità di M = 15)* | *EC+ (cardinalità di M = 15)*  |
+| ![](./img/ec_exec_M_15.png)  | ![](./img/ecplus_exec_M_15.png) |
+|:----------------------------:|:-------------------------------:|
+| *EC (cardinalità di M = 15)* |  *EC+ (cardinalità di M = 15)*  |
 
 | ![](./img/ec_exec_M_16.png)  | ![](./img/ecplus_exec_M_16.png) |
 |:----------------------------:|:-------------------------------:|
@@ -293,15 +293,15 @@ In tutti i grafici qua sopra riportati bisogna verificare l'andamento della curv
 
 | ![](./img/ec_visited_M_14.png) | ![](./img/ecplus_visited_M_14.png) |
 |:------------------------------:|:----------------------------------:|
-|  *EC (cardinalità di M = 14)*   |   *EC+ (cardinalità di M = 14)*    |
+|  *EC (cardinalità di M = 14)*  |   *EC+ (cardinalità di M = 14)*    |
 
 | ![](./img/ec_visited_M_15.png) | ![](./img/ecplus_visited_M_15.png) |
 |:------------------------------:|:----------------------------------:|
 |  *EC (cardinalità di M = 15)*  |   *EC+ (cardinalità di M = 15)*    |
 
 | ![](./img/ec_visited_M_16.png) | ![](./img/ecplus_visited_M_16.png) |
-|:------------------------------:|:---------------------------------:|
-|  *EC (cardinalità di M = 16)*  |   *EC+ (cardinalità di M = 16)*   |
+|:------------------------------:|:----------------------------------:|
+|  *EC (cardinalità di M = 16)*  |   *EC+ (cardinalità di M = 16)*    |
 
 | ![](./img/ec_visited_M_17.png) | ![](./img/ecplus_visited_M_17.png) |
 |:------------------------------:|:----------------------------------:|
