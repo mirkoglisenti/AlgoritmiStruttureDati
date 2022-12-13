@@ -1,4 +1,4 @@
-Progetto Algoritmi e Strutture Dati
+# Progetto Algoritmi e Strutture Dati
 
 Progetto per il corso "Algoritmi e Strutture Dati" per la laurea magistrale in Ingegneria Informatica all'Università degli Studi di Brescia.
 
@@ -84,7 +84,7 @@ La struttura del file di output che l'algoritmo fornisce è questa:
 [8 6 5]
 
 ;;; Algoritmo EC
-;;; Execution time: 0.557 ms
+;;; Execution time: 22.416 s (0.374 minutes) 
 ;;; Total nodes: 256 
 ;;; Visited nodes: 40 
 ;;; Percentage of nodes visited: 15.62 
@@ -177,6 +177,58 @@ Li riporto qua sotto e poi andrò ad analizzarli.
 |:---------------------------:|:------------------------------:|
 | *EC (cardinalità di M = 7)* |  *EC+ (cardinalità di M = 7)*  |
 
+| ![](./img/ec_exec_M_8.png)  | ![](./img/ecplus_exec_M_8.png) |
+|:---------------------------:|:------------------------------:|
+| *EC (cardinalità di M = 8)* |  *EC+ (cardinalità di M = 8)*  |
+
+| ![](./img/ec_exec_M_9.png)  | ![](./img/ecplus_exec_M_9.png) |
+|:---------------------------:|:------------------------------:|
+| *EC (cardinalità di M = 9)* |  *EC+ (cardinalità di M = 9)*  |
+
+| ![](./img/ec_exec_M_10.png)  | ![](./img/ecplus_exec_M_10.png) |
+|:----------------------------:|:-------------------------------:|
+| *EC (cardinalità di M = 10)* |  *EC+ (cardinalità di M = 10)*  |
+
+| ![](./img/ec_exec_M_11.png)  | ![](./img/ecplus_exec_M_11.png) |
+|:----------------------------:|:-------------------------------:|
+| *EC (cardinalità di M = 11)* |  *EC+ (cardinalità di M = 11)*  |
+
+| ![](./img/ec_exec_M_12.png)  | ![](./img/ecplus_exec_M_12.png) |
+|:----------------------------:|:------------------------------:|
+| *EC (cardinalità di M = 12)* | *EC+ (cardinalità di M = 12)*  |
+
+| ![](./img/ec_exec_M_13.png) | ![](./img/ecplus_exec_M_13.png) |
+|:---------------------------:|:-------------------------------:|
+| *EC (cardinalità di M = 13)* |  *EC+ (cardinalità di M = 13)*  |
+
+| ![](./img/ec_exec_M_14.png) | ![](./img/ecplus_exec_M_14.png) |
+|:---------------------------:|:-------------------------------:|
+| *EC (cardinalità di M = 14)* |  *EC+ (cardinalità di M = 14)*   |
+
+| ![](./img/ec_exec_M_15.png) | ![](./img/ecplus_exec_M_15.png) |
+|:---------------------------:|:------------------------------:|
+| *EC (cardinalità di M = 15)* | *EC+ (cardinalità di M = 15)*  |
+
+| ![](./img/ec_exec_M_16.png)  | ![](./img/ecplus_exec_M_16.png) |
+|:----------------------------:|:-------------------------------:|
+| *EC (cardinalità di M = 16)* |  *EC+ (cardinalità di M = 16)*  |
+
+| ![](./img/ec_exec_M_17.png)  | ![](./img/ecplus_exec_M_17.png) |
+|:----------------------------:|:-------------------------------:|
+| *EC (cardinalità di M = 17)* |  *EC+ (cardinalità di M = 17)*  |
+
+| ![](./img/ec_exec_M_18.png)  | ![](./img/ecplus_exec_M_18.png) |
+|:----------------------------:|:-------------------------------:|
+| *EC (cardinalità di M = 18)* |  *EC+ (cardinalità di M = 18)*  |
+
+| ![](./img/ec_exec_M_19.png)  | ![](./img/ecplus_exec_M_19.png) |
+|:----------------------------:|:-------------------------------:|
+| *EC (cardinalità di M = 19)* |  *EC+ (cardinalità di M = 19)*  |
+
+| ![](./img/ec_exec_M_20.png)  | ![](./img/ecplus_exec_M_20.png) |
+|:----------------------------:|:-------------------------------:|
+| *EC (cardinalità di M = 20)* |  *EC+ (cardinalità di M = 20)*  |
+
 
 In tutti i grafici qua sopra riportati bisogna verificare l'andamento della curva verde.
 Notiamo come non sembra in alcun modo tendere ad un comportamento esponenziale, piuttosto ad uno lineare
@@ -212,6 +264,58 @@ viene lanciato "a mano" funziona con grandezze molto maggiori di 7).
 | ![](./img/ec_visited_M_7.png) | ![](./img/ecplus_visited_M_7.png) |
 |:-----------------------------:|:---------------------------------:|
 |  *EC (cardinalità di M = 7)*  |   *EC+ (cardinalità di M = 7)*    |
+
+| ![](./img/ec_visited_M_8.png) | ![](./img/ecplus_visited_M_8.png) |
+|:-----------------------------:|:---------------------------------:|
+|  *EC (cardinalità di M = 8)*  |   *EC+ (cardinalità di M = 8)*    |
+
+| ![](./img/ec_visited_M_9.png) | ![](./img/ecplus_visited_M_9.png) |
+|:-----------------------------:|:---------------------------------:|
+|  *EC (cardinalità di M = 9)*  |   *EC+ (cardinalità di M = 9)*    |
+
+| ![](./img/ec_visited_M_10.png) | ![](./img/ecplus_visited_M_10.png) |
+|:------------------------------:|:----------------------------------:|
+|  *EC (cardinalità di M = 10)*  |   *EC+ (cardinalità di M = 10)*    |
+
+| ![](./img/ec_visited_M_11.png) | ![](./img/ecplus_visited_M_11.png) |
+|:------------------------------:|:----------------------------------:|
+|  *EC (cardinalità di M = 11)*  |   *EC+ (cardinalità di M = 11)*    |
+
+| ![](./img/ec_visited_M_12.png) | ![](./img/ecplus_visited_M_12.png) |
+|:------------------------------:|:----------------------------------:|
+|  *EC (cardinalità di M = 12)*  |   *EC+ (cardinalità di M = 12)*    |
+
+| ![](./img/ec_visited_M_13.png) | ![](./img/ecplus_visited_M_13.png) |
+|:------------------------------:|:----------------------------------:|
+|  *EC (cardinalità di M = 13)*  |   *EC+ (cardinalità di M = 13)*    |
+
+| ![](./img/ec_visited_M_14.png) | ![](./img/ecplus_visited_M_14.png) |
+|:------------------------------:|:----------------------------------:|
+|  *EC (cardinalità di M = 14)*   |   *EC+ (cardinalità di M = 14)*    |
+
+| ![](./img/ec_visited_M_15.png) | ![](./img/ecplus_visited_M_15.png) |
+|:------------------------------:|:----------------------------------:|
+|  *EC (cardinalità di M = 15)*  |   *EC+ (cardinalità di M = 15)*    |
+
+| ![](./img/ec_visited_M_16.png) | ![](./img/ecplus_visited_M_16.png) |
+|:------------------------------:|:---------------------------------:|
+|  *EC (cardinalità di M = 16)*  |   *EC+ (cardinalità di M = 16)*   |
+
+| ![](./img/ec_visited_M_17.png) | ![](./img/ecplus_visited_M_17.png) |
+|:------------------------------:|:----------------------------------:|
+|  *EC (cardinalità di M = 17)*  |   *EC+ (cardinalità di M = 17)*    |
+
+| ![](./img/ec_visited_M_18.png) | ![](./img/ecplus_visited_M_18.png) |
+|:------------------------------:|:----------------------------------:|
+|  *EC (cardinalità di M = 18)*  |   *EC+ (cardinalità di M = 18)*    |
+
+| ![](./img/ec_visited_M_19.png) | ![](./img/ecplus_visited_M_19.png) |
+|:------------------------------:|:----------------------------------:|
+|  *EC (cardinalità di M = 19)*  |   *EC+ (cardinalità di M = 19)*    |
+
+| ![](./img/ec_visited_M_20.png) | ![](./img/ecplus_visited_M_20.png) |
+|:------------------------------:|:----------------------------------:|
+|  *EC (cardinalità di M = 20)*  |   *EC+ (cardinalità di M = 20)*    |
 
 Anche in questi grafici prendiamo in considerazione la curva verde. Notiamo come, all'aumentare della
 cardinalità di M, la curva verde tende ad approssimarsi molto bene alla curva blu ($N^2$). Questo è in linea

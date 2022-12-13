@@ -144,7 +144,7 @@ def main(ecplus = False):
 
     end = time.time()
 
-    execution_time = round((end - start) * 10 ** 3, 3)
+    execution_time = round((end - start), 3)
 
     file = open(args.output, "w")
     file.write(';;;Cardinalità di M: ' + str(m) + '\n')
@@ -164,7 +164,7 @@ def main(ecplus = False):
         file.write('\n;;; Algoritmo EC+\n')
     else:
         file.write('\n;;; Algoritmo EC\n')
-    file.write(';;; Execution time: ' + str(execution_time) + ' ms\n')
+    file.write(';;; Execution time: ' + str(execution_time) + ' s (' + str(round(execution_time/60, 3)) + ' minutes) \n')
     file.write(';;; Total nodes: ' + str(ec.totalNodes) + ' \n')
     file.write(';;; Visited nodes: ' + str(ec.visitedNodes) + ' \n')
     file.write(';;; Percentage of nodes visited: ' + str(round((ec.visitedNodes / ec.totalNodes) * 100, 2)) + ' \n')
