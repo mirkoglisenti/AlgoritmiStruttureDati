@@ -84,7 +84,7 @@ La struttura del file di output che l'algoritmo fornisce è questa:
 [8 6 5]
 
 ;;; Algoritmo EC
-;;; Execution time: 22.416 s (0.374 minutes) 
+;;; Execution time: 0.416 s (0.007 minutes) 
 ;;; Total nodes: 256 
 ;;; Visited nodes: 40 
 ;;; Percentage of nodes visited: 15.62 
@@ -104,7 +104,7 @@ $0.5$). Per l'utilizzo del primo file è necessario specificare:
 preso un file chiamato input.txt)
 - il file .txt di output dove verrà scritto il risultato dell'algoritmo (di default verrà
 creato un file output.txt)
-- se si vuole lanciare EC oppure EC+ (di default verrà lanciato EC+)
+- se si vuole lanciare EC oppure EC+ (di default verrà lanciato EC)
 
 Riporto qua sotto la linea di codice da lanciare per l'esecuzione dell'algoritmo:
 
@@ -231,12 +231,7 @@ Li riporto qua sotto e poi andrò ad analizzarli.
 
 
 In tutti i grafici qua sopra riportati bisogna verificare l'andamento della curva verde.
-Notiamo come non sembra in alcun modo tendere ad un comportamento esponenziale, piuttosto ad uno lineare
-ma questo è dovuto alla casualità della generazione dei file di input e quindi rende in parte vana l'analisi
-di questa misura temporale. In ogni caso è interessante analizzare come ad input casuali corrispondano comunque sempre
-tempi lineari e nell'ordine dei millisecondi. L'analisi automatica è stata svolta con cardinalità massime di N e M pari a 7 in quanto
-tentare di lanciare l'algoritmo con delle grandezze massime maggiori comportava una eccezione di segmentation fault (se l'algoritmo
-viene lanciato "a mano" funziona con grandezze molto maggiori di 7).
+
 
 
 ### Numero di nodi visitati
@@ -318,7 +313,7 @@ viene lanciato "a mano" funziona con grandezze molto maggiori di 7).
 |  *EC (cardinalità di M = 20)*  |   *EC+ (cardinalità di M = 20)*    |
 
 Anche in questi grafici prendiamo in considerazione la curva verde. Notiamo come, all'aumentare della
-cardinalità di M, la curva verde tende ad approssimarsi molto bene alla curva blu ($N^2$). Questo è in linea
+cardinalità di M, la curva verde tende ad approssimarsi molto bene alla curva blu $N^2$. Questo è in linea
 con le ipotesi teoriche in quanto il ciclo utilizzato dall'algoritmo dovrà verificare, in sintesi, tutte le coppie (in realtà 
 non sono esattamente presi a coppie ma cerchiamo di mantenere il concetto semplice) di elementi dell'insieme N, questo va ad 
 approssimarsi molto bene con la grandezza $N^2$.
