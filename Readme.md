@@ -320,4 +320,13 @@ approssimarsi molto bene con la grandezza $N^2$.
 
 ## Conclusioni
 
+Ho notato come all'aumentare di M e N le complessità temporali e spaziali tendono
+ai valori teorici espressi dalla matematica di questo problema NP completo. L'analisi e la
+realizzazione di un algoritmo (seguendo le pseudocodice fornito dalla Prof.ssa Zanella) 
+risolvente questo problema mi ha permesso di capire meglio come la realizzazione di algoritmi
+a bassa complessità spaziale e temporale sia un campo di studio e settore di ricerca molto
+attivo e interessante, dove si può veramente dire che *il tempo è denaro* in quanto il CPU Time
+che viene usato per la risoluzione del problema è veramente una risorsa critica e la sua
+minimizzazione deve essere una delle principali preoccupazioni di tutti i programmatori!
+
 &copy; Glisenti Mirko - Università degli Studi di Brescia (2022)
