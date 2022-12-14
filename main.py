@@ -79,20 +79,21 @@ class EC:
                 Itemp = np.append(Itemp, k)
 
                 if self.ecPlus:
-                    cardU = U
-                    cardAKK = 0
-                    for element in self.A[k]:
-                        if element == 1:
-                            cardAKK += 1
-                    cardTemp = cardU + cardAKK
+                    # cardU = U
+                    # cardAKK = 0
+                    # for element in self.A[k]:
+                    #     if element == 1:
+                    #         cardAKK += 1
+                    # cardTemp = cardU + cardAKK
+                    cardTemp = U + self.card[k]
 
                     if cardTemp == self.m:
                         self.visitedNodes += 1
                         self.COV.append(Itemp)
                     else:
-                        Intertemp = np.intersect1d(Inter, self.B[:k, k])
+                        Intertemp = np.logical_and(Inter[0:k], self.B[0:k, k]).astype(int)
                         self.visitedNodes += 1
-                        if len(Intertemp) > 0:
+                        if (Intertemp != np.zeros(len(Intertemp), dtype=int)).any():
                             self.esplora(Itemp, cardTemp, Intertemp)
                 else:
                     Utemp = np.logical_or(U, self.A[k]).astype(int)
