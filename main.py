@@ -3,6 +3,7 @@ import numpy as np
 import time
 from distutils.util import strtobool
 import sys
+# from numba import njit
 
 sys.setrecursionlimit(2147483647)
 
@@ -19,6 +20,7 @@ class EC:
         self.ecPlus = plus
         self.card = np.zeros(self.n, dtype=int)
 
+    # @njit
     def run(self):
         for i in range(0, self.n):
             if (self.A[i] == self.zeros).all():
@@ -69,6 +71,7 @@ class EC:
                             if len(Inter) > 0 and (Inter != np.zeros(len(Inter), dtype=int)).any():
                                 self.esplora(I, U, Inter)
 
+    # @njit
     def esplora(self, I, U, Inter):
         for k in range(0, len(Inter)):
             if Inter[k] == 1:
@@ -160,7 +163,8 @@ def main(ecplus = False):
         for x in ec.COV:
             x = np.array(x, dtype=int)
             file.write(str(x+1) + '\n')
-    if args.plus:
+    #if args.plus:
+    if args.plus or ecplus:
         file.write('\n;;; Algoritmo EC+\n')
     else:
         file.write('\n;;; Algoritmo EC\n')
