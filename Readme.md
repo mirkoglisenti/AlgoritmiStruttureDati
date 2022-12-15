@@ -141,11 +141,14 @@ efficiente di matrici e vettori e che rende disponibili diverse funzioni per le 
 ## Test
 
 Ho eseguito vari test automatici per verificare il corretto funzionamento degli algoritmi EC
-ed EC+ e ho eseguito test per valori di M da $2$ a $20$ e valori di N da $2$ a `min(2^n, 5000)`.
+ed EC+ e ho eseguito test per valori di M da $2$ a $25$ e valori di N da $2$ a `min(2^n, 1000000)`.
 I risultati di questi test sono rappresentati nei grafici qua sotto. Mi sono assicurato di realizzare
 lo script generatore di file di input in modo che generi tutte righe della matrice A univoche
 e che la riga contenente solo zeri non potesse essere generata, così da assicurarmi risultati
-temporali veritieri e non totalmente influenzati dal contenuto del file di input.
+temporali veritieri e non totalmente influenzati dal contenuto del file di input. Inoltre i file di input per
+questi test sono stati "forzati" per contenere una matrice diagonale di dimensione M, in modo da forzare il
+programma a portarsi alla profondità massima di ricorsione, così da studiare lo script nel suo
+caso pessimo.
 
 ## Grafici
 
@@ -154,7 +157,7 @@ e il tempo di esecuzione totale dell'algoritmo (rappresentante quindi la comples
 cardinalità di N (numero di insiemi di elementi del dominio M).
 
 I grafici sono stati creati con la libreria Matplotlib di Python e usano la scala logaritmica per l'asse
-delle y in modo da poter notare più facilmente il comportamento esponenziale delle curve.
+delle y in modo da poter notare più facilmente il comportamento delle curve.
 
 Li riporto qua sotto e poi andrò ad analizzarli.
 
