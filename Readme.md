@@ -239,7 +239,8 @@ Li riporto qua sotto e poi andrò ad analizzarli.
 
 In tutti i grafici qua sopra riportati bisogna verificare l'andamento della curva verde.
 
-
+[](./img/EC-EXEC.gif)
+[](./img/ECplus-EXEC.gif)
 
 ### Numero di nodi visitati
 
@@ -324,6 +325,9 @@ cardinalità di M, la curva verde tende ad approssimarsi molto bene alla curva b
 con le ipotesi teoriche in quanto il ciclo utilizzato dall'algoritmo dovrà verificare, in sintesi, tutte le coppie (in realtà 
 non sono esattamente presi a coppie ma cerchiamo di mantenere il concetto semplice) di elementi dell'insieme N, questo va ad 
 approssimarsi molto bene con la grandezza $N^2$.
+
+[](./img/EC-VISITED.gif)
+[](./img/ECplus-Visited.gif)
 
 ## Conclusioni
 
