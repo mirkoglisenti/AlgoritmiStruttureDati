@@ -239,11 +239,31 @@ Li riporto qua sotto e poi andrò ad analizzarli.
 |:----------------------------:|:-------------------------------:|
 | *EC (cardinalità di M = 20)* |  *EC+ (cardinalità di M = 20)*  |
 
+| ![](./img/ec_exec_M_21.png)  | ![](./img/ecplus_exec_M_21.png) |
+|:----------------------------:|:-------------------------------:|
+| *EC (cardinalità di M = 21)* |  *EC+ (cardinalità di M = 21)*  |
+
+| ![](./img/ec_exec_M_22.png)  | ![](./img/ecplus_exec_M_22.png) |
+|:----------------------------:|:-------------------------------:|
+| *EC (cardinalità di M = 22)* |  *EC+ (cardinalità di M = 22)*  |
+
+| ![](./img/ec_exec_M_23.png)  | ![](./img/ecplus_exec_M_23.png) |
+|:----------------------------:|:-------------------------------:|
+| *EC (cardinalità di M = 23)* |  *EC+ (cardinalità di M = 23)*  |
+
+| ![](./img/ec_exec_M_24.png)  | ![](./img/ecplus_exec_M_24.png) |
+|:----------------------------:|:-------------------------------:|
+| *EC (cardinalità di M = 24)* |  *EC+ (cardinalità di M = 24)*  |
+
+| ![](./img/ec_exec_M_25.png)  | ![](./img/ecplus_exec_M_25.png) |
+|:----------------------------:|:-------------------------------:|
+| *EC (cardinalità di M = 25)* |  *EC+ (cardinalità di M = 25)*  |
+
 
 In tutti i grafici qua sopra riportati bisogna verificare l'andamento della curva verde.
 
-![](./img/EC-EXEC.gif)
-![](./img/ECplus-EXEC.gif)
+![](./img/EC-Exec.gif)
+![](./img/ECplus-Exec.gif)
 
 ### Numero di nodi visitati
 
@@ -323,13 +343,33 @@ In tutti i grafici qua sopra riportati bisogna verificare l'andamento della curv
 |:------------------------------:|:----------------------------------:|
 |  *EC (cardinalità di M = 20)*  |   *EC+ (cardinalità di M = 20)*    |
 
+| ![](./img/ec_visited_M_21.png) | ![](./img/ecplus_visited_M_21.png) |
+|:------------------------------:|:----------------------------------:|
+|  *EC (cardinalità di M = 21)*  |   *EC+ (cardinalità di M = 21)*    |
+
+| ![](./img/ec_visited_M_22.png) | ![](./img/ecplus_visited_M_22.png) |
+|:------------------------------:|:----------------------------------:|
+|  *EC (cardinalità di M = 22)*  |   *EC+ (cardinalità di M = 22)*    |
+
+| ![](./img/ec_visited_M_23.png) | ![](./img/ecplus_visited_M_23.png) |
+|:------------------------------:|:----------------------------------:|
+|  *EC (cardinalità di M = 23)*  |   *EC+ (cardinalità di M = 23)*    |
+
+| ![](./img/ec_visited_M_24.png) | ![](./img/ecplus_visited_M_24.png) |
+|:------------------------------:|:----------------------------------:|
+|  *EC (cardinalità di M = 24)*  |   *EC+ (cardinalità di M = 24)*    |
+
+| ![](./img/ec_visited_M_25.png) | ![](./img/ecplus_visited_M_25.png) |
+|:------------------------------:|:----------------------------------:|
+|  *EC (cardinalità di M = 25)*  |   *EC+ (cardinalità di M = 25)*    |
+
 Anche in questi grafici prendiamo in considerazione la curva verde. Notiamo come, all'aumentare della
 cardinalità di M, la curva verde tende ad approssimarsi molto bene alla curva blu $N^2$. Questo è in linea
 con le ipotesi teoriche in quanto il ciclo utilizzato dall'algoritmo dovrà verificare, in sintesi, tutte le coppie (in realtà 
 non sono esattamente presi a coppie ma cerchiamo di mantenere il concetto semplice) di elementi dell'insieme N, questo va ad 
 approssimarsi molto bene con la grandezza $N^2$.
 
-![](./img/EC-VISITED.gif)
+![](./img/EC-Visited.gif)
 ![](./img/ECplus-Visited.gif)
 
 ## Conclusioni
