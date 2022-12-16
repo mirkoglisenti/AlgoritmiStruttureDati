@@ -1,0 +1,11 @@
+venv*
+__pycache__*
+.idea*
+.DS_STORE*
+old*
+test*
+*.txt
+auto.py
+bk.py
+.gitignore
+log*
