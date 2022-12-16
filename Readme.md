@@ -163,214 +163,209 @@ Li riporto qua sotto e poi andrò ad analizzarli.
 
 ### Tempo di esecuzione
 
-| ![](./img/ec_exec_M_2.png)  | ![](./img/ecplus_exec_M_2.png) |
-|:---------------------------:|:------------------------------:|
-| *EC (cardinalità di M = 2)* |  *EC+ (cardinalità di M = 2)*  |
+| ![](./img/exec_M_2.png) |
+|:-----------------------:|
+| *Cardinalità di M = 2)* |
 
-| ![](./img/ec_exec_M_3.png)  | ![](./img/ecplus_exec_M_3.png) |
-|:---------------------------:|:------------------------------:|
-| *EC (cardinalità di M = 3)* |  *EC+ (cardinalità di M = 3)*  |
+| ![](./img/exec_M_3.png) |
+|:-----------------------:|
+| *Cardinalità di M = 3)* |
 
-| ![](./img/ec_exec_M_4.png)  | ![](./img/ecplus_exec_M_4.png) |
-|:---------------------------:|:------------------------------:|
-| *EC (cardinalità di M = 4)* |  *EC+ (cardinalità di M = 4)*  |
+| ![](./img/exec_M_4.png) |
+|:-----------------------:|
+| *Cardinalità di M = 4)* |
 
-| ![](./img/ec_exec_M_5.png)  | ![](./img/ecplus_exec_M_5.png) |
-|:---------------------------:|:------------------------------:|
-| *EC (cardinalità di M = 5)* |  *EC+ (cardinalità di M = 5)*  |
+| ![](./img/exec_M_5.png) |
+|:-----------------------:|
+| *Cardinalità di M = 5)* |
 
-| ![](./img/ec_exec_M_6.png)  | ![](./img/ecplus_exec_M_6.png) |
-|:---------------------------:|:------------------------------:|
-| *EC (cardinalità di M = 6)* |  *EC+ (cardinalità di M = 6)*  |
+| ![](./img/exec_M_6.png) |
+|:-----------------------:|
+| *Cardinalità di M = 6)* |
 
-| ![](./img/ec_exec_M_7.png)  | ![](./img/ecplus_exec_M_7.png) |
-|:---------------------------:|:------------------------------:|
-| *EC (cardinalità di M = 7)* |  *EC+ (cardinalità di M = 7)*  |
+| ![](./img/exec_M_7.png) |
+|:-----------------------:|
+| *Cardinalità di M = 7)* |
 
-| ![](./img/ec_exec_M_8.png)  | ![](./img/ecplus_exec_M_8.png) |
-|:---------------------------:|:------------------------------:|
-| *EC (cardinalità di M = 8)* |  *EC+ (cardinalità di M = 8)*  |
+| ![](./img/exec_M_8.png) |
+|:-----------------------:|
+| *Cardinalità di M = 8)* |
 
-| ![](./img/ec_exec_M_9.png)  | ![](./img/ecplus_exec_M_9.png) |
-|:---------------------------:|:------------------------------:|
-| *EC (cardinalità di M = 9)* |  *EC+ (cardinalità di M = 9)*  |
+| ![](./img/exec_M_9.png) |
+|:-----------------------:|
+| *Cardinalità di M = 9)* |
 
-| ![](./img/ec_exec_M_10.png)  | ![](./img/ecplus_exec_M_10.png) |
-|:----------------------------:|:-------------------------------:|
-| *EC (cardinalità di M = 10)* |  *EC+ (cardinalità di M = 10)*  |
+| ![](./img/exec_M_10.png) |
+|:------------------------:|
+| *Cardinalità di M = 10)* |
 
-| ![](./img/ec_exec_M_11.png)  | ![](./img/ecplus_exec_M_11.png) |
-|:----------------------------:|:-------------------------------:|
-| *EC (cardinalità di M = 11)* |  *EC+ (cardinalità di M = 11)*  |
+| ![](./img/exec_M_11.png) |
+|:------------------------:|
+| *Cardinalità di M = 11)* |
 
-| ![](./img/ec_exec_M_12.png)  | ![](./img/ecplus_exec_M_12.png) |
-|:----------------------------:|:-------------------------------:|
-| *EC (cardinalità di M = 12)* |  *EC+ (cardinalità di M = 12)*  |
+| ![](./img/exec_M_12.png) |
+|:------------------------:|
+| *Cardinalità di M = 12)* |
 
-| ![](./img/ec_exec_M_13.png)  | ![](./img/ecplus_exec_M_13.png) |
-|:----------------------------:|:-------------------------------:|
-| *EC (cardinalità di M = 13)* |  *EC+ (cardinalità di M = 13)*  |
+| ![](./img/exec_M_13.png) |
+|:------------------------:|
+| *Cardinalità di M = 13)* |
 
-| ![](./img/ec_exec_M_14.png)  | ![](./img/ecplus_exec_M_14.png) |
-|:----------------------------:|:-------------------------------:|
-| *EC (cardinalità di M = 14)* |  *EC+ (cardinalità di M = 14)*  |
+| ![](./img/exec_M_14.png) |
+|:------------------------:|
+| *Cardinalità di M = 14)* |
 
-| ![](./img/ec_exec_M_15.png)  | ![](./img/ecplus_exec_M_15.png) |
-|:----------------------------:|:-------------------------------:|
-| *EC (cardinalità di M = 15)* |  *EC+ (cardinalità di M = 15)*  |
+| ![](./img/exec_M_15.png) |
+|:------------------------:|
+| *Cardinalità di M = 15)* |
 
-| ![](./img/ec_exec_M_16.png)  | ![](./img/ecplus_exec_M_16.png) |
-|:----------------------------:|:-------------------------------:|
-| *EC (cardinalità di M = 16)* |  *EC+ (cardinalità di M = 16)*  |
+| ![](./img/exec_M_16.png) |
+|:------------------------:|
+| *Cardinalità di M = 16)* |
 
-| ![](./img/ec_exec_M_17.png)  | ![](./img/ecplus_exec_M_17.png) |
-|:----------------------------:|:-------------------------------:|
-| *EC (cardinalità di M = 17)* |  *EC+ (cardinalità di M = 17)*  |
+| ![](./img/exec_M_17.png) |
+|:------------------------:|
+| *Cardinalità di M = 17)* |
 
-| ![](./img/ec_exec_M_18.png)  | ![](./img/ecplus_exec_M_18.png) |
-|:----------------------------:|:-------------------------------:|
-| *EC (cardinalità di M = 18)* |  *EC+ (cardinalità di M = 18)*  |
+| ![](./img/exec_M_18.png) |
+|:------------------------:|
+| *Cardinalità di M = 18)* |
 
-| ![](./img/ec_exec_M_19.png)  | ![](./img/ecplus_exec_M_19.png) |
-|:----------------------------:|:-------------------------------:|
-| *EC (cardinalità di M = 19)* |  *EC+ (cardinalità di M = 19)*  |
+| ![](./img/exec_M_19.png) |
+|:------------------------:|
+| *Cardinalità di M = 19)* |
 
-| ![](./img/ec_exec_M_20.png)  | ![](./img/ecplus_exec_M_20.png) |
-|:----------------------------:|:-------------------------------:|
-| *EC (cardinalità di M = 20)* |  *EC+ (cardinalità di M = 20)*  |
+| ![](./img/exec_M_20.png) |
+|:------------------------:|
+| *Cardinalità di M = 20)* |
 
-| ![](./img/ec_exec_M_21.png)  | ![](./img/ecplus_exec_M_21.png) |
-|:----------------------------:|:-------------------------------:|
-| *EC (cardinalità di M = 21)* |  *EC+ (cardinalità di M = 21)*  |
+| ![](./img/exec_M_21.png) |
+|:------------------------:|
+| *Cardinalità di M = 21)* |
 
-| ![](./img/ec_exec_M_22.png)  | ![](./img/ecplus_exec_M_22.png) |
-|:----------------------------:|:-------------------------------:|
-| *EC (cardinalità di M = 22)* |  *EC+ (cardinalità di M = 22)*  |
+| ![](./img/exec_M_22.png) |
+|:------------------------:|
+| *Cardinalità di M = 22)* |
 
-| ![](./img/ec_exec_M_23.png)  | ![](./img/ecplus_exec_M_23.png) |
-|:----------------------------:|:-------------------------------:|
-| *EC (cardinalità di M = 23)* |  *EC+ (cardinalità di M = 23)*  |
+| ![](./img/exec_M_23.png) |
+|:------------------------:|
+| *Cardinalità di M = 23)* |
 
-| ![](./img/ec_exec_M_24.png)  | ![](./img/ecplus_exec_M_24.png) |
-|:----------------------------:|:-------------------------------:|
-| *EC (cardinalità di M = 24)* |  *EC+ (cardinalità di M = 24)*  |
+| ![](./img/exec_M_24.png) |
+|:------------------------:|
+| *Cardinalità di M = 24)* |
 
-| ![](./img/ec_exec_M_25.png)  | ![](./img/ecplus_exec_M_25.png) |
-|:----------------------------:|:-------------------------------:|
-| *EC (cardinalità di M = 25)* |  *EC+ (cardinalità di M = 25)*  |
+| ![](./img/exec_M_25.png) |
+|:------------------------:|
+| *Cardinalità di M = 25)* |
 
-
-In tutti i grafici qua sopra riportati bisogna verificare l'andamento della curva verde.
-
-![](./img/EC-Exec.gif)
-![](./img/ECplus-Exec.gif)
+![](./img/Exec.gif)
 
 ### Numero di nodi visitati
 
-| ![](./img/ec_visited_M_2.png) | ![](./img/ecplus_visited_M_2.png) |
-|:-----------------------------:|:---------------------------------:|
-|  *EC (cardinalità di M = 2)*  |   *EC+ (cardinalità di M = 2)*    |
+| ![](./img/visited_M_2.png) |
+|:--------------------------:|
+|  *Cardinalità di M = 2)*   |
 
-| ![](./img/ec_visited_M_3.png) | ![](./img/ecplus_visited_M_3.png) |
-|:-----------------------------:|:---------------------------------:|
-|  *EC (cardinalità di M = 3)*  |   *EC+ (cardinalità di M = 3)*    |
+| ![](./img/visited_M_3.png) |
+|:--------------------------:|
+|  *Cardinalità di M = 3)*   |
 
-| ![](./img/ec_visited_M_4.png) | ![](./img/ecplus_visited_M_4.png) |
-|:-----------------------------:|:---------------------------------:|
-|  *EC (cardinalità di M = 4)*  |   *EC+ (cardinalità di M = 4)*    |
+| ![](./img/visited_M_4.png) |
+|:--------------------------:|
+|  *Cardinalità di M = 4)*   |
 
-| ![](./img/ec_visited_M_5.png) | ![](./img/ecplus_visited_M_5.png) |
-|:-----------------------------:|:---------------------------------:|
-|  *EC (cardinalità di M = 5)*  |   *EC+ (cardinalità di M = 5)*    |
+| ![](./img/visited_M_5.png) |
+|:--------------------------:|
+|  *Cardinalità di M = 5)*   |
 
-| ![](./img/ec_visited_M_6.png) | ![](./img/ecplus_visited_M_6.png) |
-|:-----------------------------:|:---------------------------------:|
-|  *EC (cardinalità di M = 6)*  |   *EC+ (cardinalità di M = 6)*    |
+| ![](./img/visited_M_6.png) |
+|:--------------------------:|
+|  *Cardinalità di M = 6)*   |
 
-| ![](./img/ec_visited_M_7.png) | ![](./img/ecplus_visited_M_7.png) |
-|:-----------------------------:|:---------------------------------:|
-|  *EC (cardinalità di M = 7)*  |   *EC+ (cardinalità di M = 7)*    |
+| ![](./img/visited_M_7.png) |
+|:--------------------------:|
+|  *Cardinalità di M = 7)*   |
 
-| ![](./img/ec_visited_M_8.png) | ![](./img/ecplus_visited_M_8.png) |
-|:-----------------------------:|:---------------------------------:|
-|  *EC (cardinalità di M = 8)*  |   *EC+ (cardinalità di M = 8)*    |
+| ![](./img/visited_M_8.png) |
+|:--------------------------:|
+|  *Cardinalità di M = 8)*   |
 
-| ![](./img/ec_visited_M_9.png) | ![](./img/ecplus_visited_M_9.png) |
-|:-----------------------------:|:---------------------------------:|
-|  *EC (cardinalità di M = 9)*  |   *EC+ (cardinalità di M = 9)*    |
+| ![](./img/visited_M_9.png) |
+|:--------------------------:|
+|  *Cardinalità di M = 9)*   |
 
-| ![](./img/ec_visited_M_10.png) | ![](./img/ecplus_visited_M_10.png) |
-|:------------------------------:|:----------------------------------:|
-|  *EC (cardinalità di M = 10)*  |   *EC+ (cardinalità di M = 10)*    |
+| ![](./img/visited_M_10.png) |
+|:---------------------------:|
+|  *Cardinalità di M = 10)*   |
 
-| ![](./img/ec_visited_M_11.png) | ![](./img/ecplus_visited_M_11.png) |
-|:------------------------------:|:----------------------------------:|
-|  *EC (cardinalità di M = 11)*  |   *EC+ (cardinalità di M = 11)*    |
+| ![](./img/visited_M_11.png) |
+|:---------------------------:|
+|  *Cardinalità di M = 11)*   |
 
-| ![](./img/ec_visited_M_12.png) | ![](./img/ecplus_visited_M_12.png) |
-|:------------------------------:|:----------------------------------:|
-|  *EC (cardinalità di M = 12)*  |   *EC+ (cardinalità di M = 12)*    |
+| ![](./img/visited_M_12.png) |
+|:---------------------------:|
+|  *Cardinalità di M = 12)*   |
 
-| ![](./img/ec_visited_M_13.png) | ![](./img/ecplus_visited_M_13.png) |
-|:------------------------------:|:----------------------------------:|
-|  *EC (cardinalità di M = 13)*  |   *EC+ (cardinalità di M = 13)*    |
+| ![](./img/visited_M_13.png) |
+|:---------------------------:|
+|   *Cardinalità di M = 13)*   |
 
-| ![](./img/ec_visited_M_14.png) | ![](./img/ecplus_visited_M_14.png) |
-|:------------------------------:|:----------------------------------:|
-|  *EC (cardinalità di M = 14)*  |   *EC+ (cardinalità di M = 14)*    |
+| ![](./img/visited_M_14.png) |
+|:---------------------------:|
+|  *Cardinalità di M = 14)*   |
 
-| ![](./img/ec_visited_M_15.png) | ![](./img/ecplus_visited_M_15.png) |
-|:------------------------------:|:----------------------------------:|
-|  *EC (cardinalità di M = 15)*  |   *EC+ (cardinalità di M = 15)*    |
+| ![](./img/visited_M_15.png) |
+|:---------------------------:|
+|  *Cardinalità di M = 15)*   |
 
-| ![](./img/ec_visited_M_16.png) | ![](./img/ecplus_visited_M_16.png) |
-|:------------------------------:|:----------------------------------:|
-|  *EC (cardinalità di M = 16)*  |   *EC+ (cardinalità di M = 16)*    |
+| ![](./img/visited_M_16.png) |
+|:---------------------------:|
+|  *Cardinalità di M = 16)*   |
 
-| ![](./img/ec_visited_M_17.png) | ![](./img/ecplus_visited_M_17.png) |
-|:------------------------------:|:----------------------------------:|
-|  *EC (cardinalità di M = 17)*  |   *EC+ (cardinalità di M = 17)*    |
+| ![](./img/visited_M_17.png) |
+|:---------------------------:|
+|  *Cardinalità di M = 17)*   |
 
-| ![](./img/ec_visited_M_18.png) | ![](./img/ecplus_visited_M_18.png) |
-|:------------------------------:|:----------------------------------:|
-|  *EC (cardinalità di M = 18)*  |   *EC+ (cardinalità di M = 18)*    |
+| ![](./img/visited_M_18.png) |
+|:---------------------------:|
+|  *Cardinalità di M = 18)*   |
 
-| ![](./img/ec_visited_M_19.png) | ![](./img/ecplus_visited_M_19.png) |
-|:------------------------------:|:----------------------------------:|
-|  *EC (cardinalità di M = 19)*  |   *EC+ (cardinalità di M = 19)*    |
+| ![](./img/visited_M_19.png) |
+|:---------------------------:|
+|  *Cardinalità di M = 19)*   |
 
-| ![](./img/ec_visited_M_20.png) | ![](./img/ecplus_visited_M_20.png) |
-|:------------------------------:|:----------------------------------:|
-|  *EC (cardinalità di M = 20)*  |   *EC+ (cardinalità di M = 20)*    |
+| ![](./img/visited_M_20.png) |
+|:---------------------------:|
+|  *Cardinalità di M = 20)*   |
 
-| ![](./img/ec_visited_M_21.png) | ![](./img/ecplus_visited_M_21.png) |
-|:------------------------------:|:----------------------------------:|
-|  *EC (cardinalità di M = 21)*  |   *EC+ (cardinalità di M = 21)*    |
+| ![](./img/visited_M_21.png) |
+|:---------------------------:|
+|  *Cardinalità di M = 21)*   |
 
-| ![](./img/ec_visited_M_22.png) | ![](./img/ecplus_visited_M_22.png) |
-|:------------------------------:|:----------------------------------:|
-|  *EC (cardinalità di M = 22)*  |   *EC+ (cardinalità di M = 22)*    |
+| ![](./img/visited_M_22.png) |
+|:---------------------------:|
+|  *Cardinalità di M = 22)*   |
 
-| ![](./img/ec_visited_M_23.png) | ![](./img/ecplus_visited_M_23.png) |
-|:------------------------------:|:----------------------------------:|
-|  *EC (cardinalità di M = 23)*  |   *EC+ (cardinalità di M = 23)*    |
+| ![](./img/visited_M_23.png) |
+|:---------------------------:|
+|  *Cardinalità di M = 23)*   |
 
-| ![](./img/ec_visited_M_24.png) | ![](./img/ecplus_visited_M_24.png) |
-|:------------------------------:|:----------------------------------:|
-|  *EC (cardinalità di M = 24)*  |   *EC+ (cardinalità di M = 24)*    |
+| ![](./img/visited_M_24.png) |
+|:---------------------------:|
+|   *Cardinalità di M = 24)*   |
 
-| ![](./img/ec_visited_M_25.png) | ![](./img/ecplus_visited_M_25.png) |
-|:------------------------------:|:----------------------------------:|
-|  *EC (cardinalità di M = 25)*  |   *EC+ (cardinalità di M = 25)*    |
+| ![](./img/visited_M_25.png) |
+|:---------------------------:|
+|  *Cardinalità di M = 25)*   |
 
-Anche in questi grafici prendiamo in considerazione la curva verde. Notiamo come, all'aumentare della
-cardinalità di M, la curva verde tende ad approssimarsi molto bene alla curva blu $N^2$. Questo è in linea
-con le ipotesi teoriche in quanto il ciclo utilizzato dall'algoritmo dovrà verificare, in sintesi, tutte le coppie (in realtà 
+
+Notiamo come, all'aumentare della cardinalità di M, la curva verde tende ad approssimarsi molto bene alla curva blu $N^2$.
+Questo è in linea con le ipotesi teoriche in quanto il ciclo utilizzato dall'algoritmo dovrà verificare, in sintesi, tutte le coppie (in realtà 
 non sono esattamente presi a coppie ma cerchiamo di mantenere il concetto semplice) di elementi dell'insieme N, questo va ad 
 approssimarsi molto bene con la grandezza $N^2$.
 
-![](./img/EC-Visited.gif)
-![](./img/ECplus-Visited.gif)
+![](./img/Visited.gif)
 
 ## Conclusioni
 
