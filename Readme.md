@@ -132,11 +132,11 @@ Riporto qua sotto la linea di codice da lanciare per l'esecuzione del secondo sc
 - `-N` indica la cardinalità di N
 - `-P` indica la probabilità che si vorrà utilizzare
 
+
+
 La memorizzazione e l'utilizzo della matrice A e della matrice B all'interno dell'algoritmo
 è affidata alla libreria NumPy di Python, una libreria pensata appositamente per la gestione
 efficiente di matrici e vettori e che rende disponibili diverse funzioni per le operazioni.
-
-
 
 ## Test
 
