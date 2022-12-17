@@ -116,6 +116,22 @@ Il primo file è il responsabile del vero e proprio algoritmo EC ed EC+, il seco
 responsabile della creazione di file di input casuali e il terzo è responsabile della verifica dell'uguaglianza tra la soluzione proposta
 da EC e quella proposta da EC+.
 
+Le strutture dati utilizzate sono gli array offerti da NumPy. Ogni elemento dell'array occupa 4 byte di memoria quindi,
+ad esempio, per una matrice A di 10x10, una matrice B di 10x10 e un'insieme COV di una copertura formata da 10 righe della
+matrice A, avremo:
+- $10 x 10 x 4 = 400$ byte +
+- $10 x 10 x 4 = 400$ byte +
+- $10 x 4 = 40$ byte =
+- $840$ byte di memoria occupati
+
+La matrice B, nell'algoritmo, viene implementata come una vera e propria matrice NxN.
+Stessa cosa per la matrice A.
+L'insieme COV viene implementato con una lista di array, dove ogni array rappresenta una copertura esatta.
+
+I tempi di risposta dell'algoritmo sono stati migliorati grazie all'utilizzo di funzioni per matrici ed array messe a
+disposizione dalla libreria NumPy; queste funzioni sono state create appositamente per ridurre al minimo i tempi di
+risposta in quanto sono ottimizzate. 
+
 ### main.py
 
 Per l'utilizzo del primo file è necessario specificare:
