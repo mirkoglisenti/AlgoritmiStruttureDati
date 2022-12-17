@@ -1,3 +1,5 @@
-numpy
-argparse
-matplotlib
+numpy~=1.23.5
+argparse~=1.4.0
+matplotlib~=3.6.2
+pynput~=1.7.6
+keyboard~=0.13.5

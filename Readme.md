@@ -27,6 +27,16 @@ Per questo scopo ho deciso di realizzare il codice interamente in Python andando
 implementare sia l'algoritmo EC che l'algoritmo EC+ andando ad aumentare il più possibile
 il grado di riutilizzo del codice in quanto i due algoritmi sono molto simili tra loro.
 
+## Risorse HW e SW
+
+Per l'esecuzione del mio codice ho utilizzato un server con queste caratteristiche HW:
+
+- RAM 500GB
+- CPU Intel(R) Xeon(R) Gold 6140M CPU @ 2.30GHz
+
+e con installato una Ubuntu 18.04.6 LTS. La versione di Python installata sul server è la 3.7.4
+e i pacchetti necessari al funzionamento dello script sono riportati nel file `requirements.txt`.
+
 ## Implementazione
 
 L'algoritmo da me proposto prende in input un file di testo e restituisce in output
@@ -93,31 +103,55 @@ La struttura del file di output che l'algoritmo fornisce è questa:
 
 ## Scelte progettuali
 
-Ai fini del progetto sono stati realizzati due script:
+Ai fini del progetto sono stati realizzati tre script:
 - `main.py`
 - `input.py`
+- `verify.py`
 
 Il primo file è il responsabile del vero e proprio algoritmo EC e EC+, il secondo è 
-responsabile della creazione di file di input casuali (con distribuzione binomiale a probabilità
-$0.5$). Per l'utilizzo del primo file è necessario specificare:
-- il file .txt di input da dove prelevare la matrice A (di default verrà 
+responsabile della creazione di file di input casuali e il terzo è responsabile della verifica dell'uguaglianza tra la soluzione proposta
+da EC e quella proposta da EC+.
+
+### main.py
+
+Per l'utilizzo del primo file è necessario specificare:
+
+- il path al file .txt di input da dove prelevare la matrice A (di default verrà 
 preso un file chiamato input.txt)
-- il file .txt di output dove verrà scritto il risultato dell'algoritmo (di default verrà
+- il path al file .txt di output dove verrà scritto il risultato dell'algoritmo (di default verrà
 creato un file output.txt)
 - se si vuole lanciare EC oppure EC+ (di default verrà lanciato EC)
+- se si vuole assegnare un tempo massimo di esecuzione dello script (di default è disattivato)
 
 Riporto qua sotto la linea di codice da lanciare per l'esecuzione dell'algoritmo:
 
-`$ python3 main.py -I input.txt -O output.txt -P True`
+`$ sudo python3 main.py -I input.txt -O output.txt -P True -T 10`
 
-- `-I` indica il nome del file di input (ricordarsi di aggiungere l'estensione .txt al nome del file)
-- `-O` indica il nome del file di output che verrà scritto (ricordarsi di aggiungere l'estensione .txt al nome del file)
+***N.B. È importante l'uso dei permessi amministrativi in quanto, per poter fare il catch della
+pressione del tasto della tastiera che termina il programma (il tasto "q"), è necessario che
+lo script possieda i permessi da amministratore. Faccio notare che ho eseguito i test di questo
+script solo in ambiente Linux e MacOS, non garantisco il corretto funzionamento (solo
+della libreria per i tasti della tastiera) su sistemi Windows.***
+
+- `-I` indica il path del file di input (ricordarsi di aggiungere l'estensione .txt al path del file)
+- `-O` indica il path del file di output che verrà scritto (ricordarsi di aggiungere l'estensione .txt al path del file)
 - `-P` indica se si vuole usare EC+ o meno:
   - `True` -> userà EC+
   - `False` -> userà EC
+- `-T` indica se si vuole assegnare un tempo massimo (in secondi) o meno
+
+Se non sarà specificato il parametro `-T` sarà prevista la possibilità di terminare l'algoritmo
+in qualsiasi momento premendo il tasto "q" della tastiera.
+
+### input.py
+
+Viene usata la distribuzione binomiale a probabilità variabile (default $0.5$) per creare
+il file di input. Ho scelto questa tipologia di distribuzione per gestire al meglio la
+probabilità con la quale voglio che la matrice di input sia riempita con zero o uno.
+Per approfondimenti clicca [qui](https://it.wikipedia.org/wiki/Distribuzione_binomiale).
 
 Per l'utilizzo del secondo file è necessario specificare:
-- il nome del file di input che si vorrà generare (di default verrà usato input.txt come nome)
+- il path del file di input che si vorrà generare (di default verrà usato input.txt come path)
 - la cardinalità dell'insieme M (di default 10)
 - la cardinalità dell'insieme N (di default 10)
 - la probabilità con la quale si sceglierà se popolare gli elementi di N con degli uno (di
@@ -127,33 +161,51 @@ Riporto qua sotto la linea di codice da lanciare per l'esecuzione del secondo sc
 
 `$ python3 input.py -I input.txt -P 0.5 -N 10 -M 10`
 
-- `-I` indica il nome del file di input (ricordarsi di aggiungere l'estensione .txt al nome del file)
+- `-I` indica il path del file di input (ricordarsi di aggiungere l'estensione .txt al path del file)
 - `-M` indica la cardinalità di M
 - `-N` indica la cardinalità di N
 - `-P` indica la probabilità che si vorrà utilizzare
 
+### verify.py
 
+Per l'utilizzo del terzo file è necessario specificare:
+- il path al primo file di output (dato dall'esecuzione dello script `main.py`)
+- il path al secondo file di output (dato dall'esecuzione dello script `main.py`)
+
+Riporto qua sotto la linea di codice da lanciare per l'esecuzione del terzo script:
+
+`$ python3 verify.py -1 output1.txt -2 output2.txt`
+
+- `-1` indica la path al primo file
+- `-2` indica la path al secondo file
+
+
+***N.B. L'accortezza di specificare i corretti file di output (uno per il risultato di EC 
+e l'altro per il risultato di EC+ determinati dallo stesso file di input) è lasciata all'utente, il programma non fa
+nessuna verifica in merito!***
 
 La memorizzazione e l'utilizzo della matrice A e della matrice B all'interno dell'algoritmo
 è affidata alla libreria NumPy di Python, una libreria pensata appositamente per la gestione
-efficiente di matrici e vettori e che rende disponibili diverse funzioni per le operazioni.
+efficiente di matrici e vettori e che rende disponibili diverse funzioni per le operazioni, come:
+- Una funzione per gestire le intersezioni tra vettori binari
+- Una funzione per gestire le unioni tra vettori binari
+- Una funzione per creare matrici diagonali e modificarle facilmente
 
 ## Test
 
 Ho eseguito vari test automatici per verificare il corretto funzionamento degli algoritmi EC
-ed EC+ e ho eseguito test per valori di M da $2$ a $25$ e valori di N da $2$ al valore minimo tra $2^N$ e $1000000$.
+ed EC+. I test sono stati eseguiti per valori di M compresi tra $2$ e $25$ e valori di N calcolati
+ad-hoc per avere un numero di esecuzioni valido per creare un grafico significativo.
 I risultati di questi test sono rappresentati nei grafici qua sotto. Mi sono assicurato di realizzare
 lo script generatore di file di input in modo che generi tutte righe della matrice A univoche
-e che la riga contenente solo zeri non potesse essere generata, così da assicurarmi risultati
-temporali veritieri e non totalmente influenzati dal contenuto del file di input. Inoltre i file di input per
-questi test sono stati "forzati" per contenere una matrice diagonale di dimensione M, in modo da forzare il
-programma a portarsi alla profondità massima di ricorsione, così da studiare lo script nel suo
-caso pessimo.
+e che la riga contenente solo zeri non potesse essere generata. Inoltre i file di input per
+questi test sono stati "forzati" per contenere una matrice diagonale di dimensione M, in modo
+da portare il programma alla profondità massima di ricorsione.
 
 ## Grafici
 
-Ho creato vari grafici per riportare il numero di nodi visitati (rappresentanti una sorta di complessità spaziale nel caso pessimo)
-e il tempo di esecuzione totale dell'algoritmo (rappresentante quindi la complessità temporale) al variare della
+Ho creato vari grafici per riportare il numero di nodi visitati (complessità spaziale)
+e il tempo di esecuzione totale dell'algoritmo (complessità temporale) al variare della
 cardinalità di N (numero di insiemi di elementi del dominio M).
 
 I grafici sono stati creati con la libreria Matplotlib di Python e usano la scala logaritmica per l'asse
@@ -260,6 +312,8 @@ Li riporto qua sotto e poi andrò ad analizzarli.
 | *Cardinalità di M = 25)* |
 
 ![](./img/Exec.gif)
+
+Notiamo ...
 
 ### Numero di nodi visitati
 
