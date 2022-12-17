@@ -119,9 +119,9 @@ da EC e quella proposta da EC+.
 Le strutture dati utilizzate sono gli array offerti da NumPy. Ogni elemento dell'array occupa 4 byte di memoria quindi,
 ad esempio, per una matrice A di 10x10, una matrice B di 10x10 e un'insieme COV di una copertura formata da 10 righe della
 matrice A, avremo:
-- $10 x 10 x 4 = 400$ byte +
-- $10 x 10 x 4 = 400$ byte +
-- $10 x 4 = 40$ byte =
+- $10 * 10 * 4 = 400$ byte +
+- $10 * 10 * 4 = 400$ byte +
+- $10 * 4 = 40$ byte =
 - $840$ byte di memoria occupati
 
 La matrice B, nell'algoritmo, viene implementata come una vera e propria matrice NxN.
