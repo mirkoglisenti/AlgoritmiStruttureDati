@@ -155,16 +155,16 @@ if __name__ == '__main__':
 
     if args.time != -1:
         print('Eseguo lo script con un timeout di ' + str(args.time) + ' secondi ...')
-        while time.time() - start < args.time:
+        while ec.is_alive() and time.time() - start < args.time:
             continue
-        ec.stop = True
     else:
         print('Calcolo in corso ...')
         print('Puoi interrompere l\'esecuzione in qualsiasi momento premendo il tasto "q"')
         while ec.is_alive() and not keyboard.is_pressed("q"):
             continue
-        if ec.is_alive():
-            ec.stop = True
+
+    if ec.is_alive():
+        ec.stop = True
 
     ec.join()
 

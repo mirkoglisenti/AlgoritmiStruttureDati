@@ -6,8 +6,12 @@ Progetto per il corso "Algoritmi e Strutture Dati" per la laurea magistrale in I
 
 <!-- TOC -->
 * [Obiettivo del progetto](#obiettivo-del-progetto)
+* [Risorse HW e SW](#risorse-hw-e-sw)
 * [Implementazione](#implementazione)
 * [Scelte progettuali](#scelte-progettuali)
+  * [main.py](#mainpy)
+  * [input.py](#inputpy)
+  * [verify.py](#verifypy)
 * [Test](#test)
 * [Grafici](#grafici)
   * [Tempo di esecuzione](#tempo-di-esecuzione)
@@ -34,7 +38,7 @@ Per l'esecuzione del mio codice ho utilizzato un server con queste caratteristic
 - RAM 500GB
 - CPU Intel(R) Xeon(R) Gold 6140M CPU @ 2.30GHz
 
-e con installato una Ubuntu 18.04.6 LTS. La versione di Python installata sul server è la 3.7.4
+Il SO installato è una Ubuntu 18.04.6 LTS. La versione di Python installata sul server è la 3.7.4
 e i pacchetti necessari al funzionamento dello script sono riportati nel file `requirements.txt`.
 
 ## Implementazione
@@ -108,7 +112,7 @@ Ai fini del progetto sono stati realizzati tre script:
 - `input.py`
 - `verify.py`
 
-Il primo file è il responsabile del vero e proprio algoritmo EC e EC+, il secondo è 
+Il primo file è il responsabile del vero e proprio algoritmo EC ed EC+, il secondo è 
 responsabile della creazione di file di input casuali e il terzo è responsabile della verifica dell'uguaglianza tra la soluzione proposta
 da EC e quella proposta da EC+.
 
@@ -123,6 +127,11 @@ creato un file output.txt)
 - se si vuole lanciare EC oppure EC+ (di default verrà lanciato EC)
 - se si vuole assegnare un tempo massimo di esecuzione dello script (di default è disattivato)
 
+Se non sarà specificato il parametro del tempo massimo di esecuzione sarà prevista la possibilità di terminare l'algoritmo
+in qualsiasi momento premendo il tasto "q" della tastiera. La terminazione, per mezzo di un timeout oppure per la pressione
+del tasto "q", scriverà comunque un file di output con i risultati parziali ottenuti fino a quel momento (verrà indicato nel
+file di output che l'insieme COV trovato si riferisce ad un algoritmo terminato preventivamente). 
+
 Riporto qua sotto la linea di codice da lanciare per l'esecuzione dell'algoritmo:
 
 `$ sudo python3 main.py -I input.txt -O output.txt -P True -T 10`
@@ -130,8 +139,8 @@ Riporto qua sotto la linea di codice da lanciare per l'esecuzione dell'algoritmo
 ***N.B. È importante l'uso dei permessi amministrativi in quanto, per poter fare il catch della
 pressione del tasto della tastiera che termina il programma (il tasto "q"), è necessario che
 lo script possieda i permessi da amministratore. Faccio notare che ho eseguito i test di questo
-script solo in ambiente Linux e MacOS, non garantisco il corretto funzionamento (solo
-della libreria per i tasti della tastiera) su sistemi Windows.***
+script solo in ambiente Linux e MacOS, non garantisco il corretto funzionamento della terminazione
+per mezzo della tastiera su sistemi Windows.***
 
 - `-I` indica il path del file di input (ricordarsi di aggiungere l'estensione .txt al path del file)
 - `-O` indica il path del file di output che verrà scritto (ricordarsi di aggiungere l'estensione .txt al path del file)
@@ -140,14 +149,14 @@ della libreria per i tasti della tastiera) su sistemi Windows.***
   - `False` -> userà EC
 - `-T` indica se si vuole assegnare un tempo massimo (in secondi) o meno
 
-Se non sarà specificato il parametro `-T` sarà prevista la possibilità di terminare l'algoritmo
-in qualsiasi momento premendo il tasto "q" della tastiera.
-
 ### input.py
 
 Viene usata la distribuzione binomiale a probabilità variabile (default $0.5$) per creare
 il file di input. Ho scelto questa tipologia di distribuzione per gestire al meglio la
 probabilità con la quale voglio che la matrice di input sia riempita con zero o uno.
+Se, ad esempio, si richieda una generazione di file di input con probabilità $0.5$ si otterrà un file
+che ogni elemeto di ogni riga della matrice A avrà il 50% di probabilità di essere un $1$ e il 50% di probabilità
+di essere uno $0$.
 Per approfondimenti clicca [qui](https://it.wikipedia.org/wiki/Distribuzione_binomiale).
 
 Per l'utilizzo del secondo file è necessario specificare:
@@ -195,18 +204,22 @@ efficiente di matrici e vettori e che rende disponibili diverse funzioni per le 
 
 Ho eseguito vari test automatici per verificare il corretto funzionamento degli algoritmi EC
 ed EC+. I test sono stati eseguiti per valori di M compresi tra $2$ e $25$ e valori di N calcolati
-ad-hoc per avere un numero di esecuzioni valido per creare un grafico significativo.
+ad-hoc per avere un numero di esecuzioni valido per creare un grafico significativo (circa $30$ valori di N 
+diversi per testare l'algoritmo al crescere del numero delle righe della matrice A).
+
 I risultati di questi test sono rappresentati nei grafici qua sotto. Mi sono assicurato di realizzare
 lo script generatore di file di input in modo che generi tutte righe della matrice A univoche
-e che la riga contenente solo zeri non potesse essere generata. Inoltre i file di input per
-questi test sono stati "forzati" per contenere una matrice diagonale di dimensione M, in modo
-da portare il programma alla profondità massima di ricorsione.
+e che la riga contenente solo zeri non potesse essere generata.
+
+Inoltre i file di input per questi test sono stati "forzati" per contenere una matrice diagonale di dimensione M, in modo
+da portare il programma alla profondità massima di ricorsione. Ho deciso di creare questi file di input per testare come
+l'algoritmo si comporta quando, per generare un copertura dell'insieme COV, deve aggreggare il numero massimo possibile
+di righe della matrice A (questo numero coincide con la cardinalità di M).
 
 ## Grafici
 
-Ho creato vari grafici per riportare il numero di nodi visitati (complessità spaziale)
-e il tempo di esecuzione totale dell'algoritmo (complessità temporale) al variare della
-cardinalità di N (numero di insiemi di elementi del dominio M).
+Ho creato vari grafici per riportare il numero di nodi visitati (complessità spaziale dell'algoritmo) e il tempo di esecuzione totale
+dell'algoritmo (complessità temporale) al variare della cardinalità di N (numero di insiemi di elementi del dominio M).
 
 I grafici sono stati creati con la libreria Matplotlib di Python e usano la scala logaritmica per l'asse
 delle y in modo da poter notare più facilmente il comportamento delle curve.
@@ -313,7 +326,10 @@ Li riporto qua sotto e poi andrò ad analizzarli.
 
 ![](./img/Exec.gif)
 
-Notiamo ...
+Notiamo come i tempi di esecuzione di EC ed EC+ non sembrino sostanzialmente diversi, questo è dovuto al fatto che la modifica
+di EC+ data al codice non va a modificare il numero di nodi visitati ma va solo a diminuire il numero di unioni tra righe
+della matrice A (operazione che, con la libreria NumPy, non va ad appesantire il sistema in maniera critica); questo
+determina un tempo di esecuzione minore ma non in maniera sostanziale.
 
 ### Numero di nodi visitati
 
@@ -363,7 +379,7 @@ Notiamo ...
 
 | ![](./img/visited_M_13.png) |
 |:---------------------------:|
-|   *Cardinalità di M = 13)*   |
+|  *Cardinalità di M = 13)*   |
 
 | ![](./img/visited_M_14.png) |
 |:---------------------------:|
@@ -407,7 +423,7 @@ Notiamo ...
 
 | ![](./img/visited_M_24.png) |
 |:---------------------------:|
-|   *Cardinalità di M = 24)*   |
+|  *Cardinalità di M = 24)*   |
 
 | ![](./img/visited_M_25.png) |
 |:---------------------------:|
@@ -415,9 +431,9 @@ Notiamo ...
 
 
 Notiamo come, all'aumentare della cardinalità di M, la curva verde tende ad approssimarsi molto bene alla curva blu $N^2$.
-Questo è in linea con le ipotesi teoriche in quanto il ciclo utilizzato dall'algoritmo dovrà verificare, in sintesi, tutte le coppie (in realtà 
-non sono esattamente presi a coppie ma cerchiamo di mantenere il concetto semplice) di elementi dell'insieme N, questo va ad 
-approssimarsi molto bene con la grandezza $N^2$.
+Questo è in linea con le ipotesi teoriche in quanto il ciclo utilizzato dall'algoritmo dovrà verificare, per ogni riga
+della matrice A, tutte le unioni tra quest'ultima e tutte le precedenti (prima prese a coppie, poi ad insiemi di tre, quattro, ...)
+fino a che non si trovano righe incompatibili oppure che unite tra loro formano l'insieme M. 
 
 ![](./img/Visited.gif)
 
