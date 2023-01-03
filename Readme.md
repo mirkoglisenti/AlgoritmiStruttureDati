@@ -346,6 +346,8 @@ Notiamo come i tempi di esecuzione di EC ed EC+ non sembrino sostanzialmente div
 di EC+ data al codice non va a modificare il numero di nodi visitati ma va solo a diminuire il numero di unioni tra righe
 della matrice A (operazione che, con la libreria NumPy, non va ad appesantire il sistema in maniera critica); questo
 determina un tempo di esecuzione minore ma non in maniera sostanziale.
+Notiamo come la curva del tempo di esecuzione di entrambi gli algoritmi segue lo sviluppo della curva di $N^4$, quindi 
+possiamo approssimare la complessità temporale di entrambi gli algoritmi con un $O(N^4)$.
 
 ### Numero di nodi visitati
 
@@ -446,10 +448,12 @@ determina un tempo di esecuzione minore ma non in maniera sostanziale.
 |  *Cardinalità di M = 25)*   |
 
 
-Notiamo come, all'aumentare della cardinalità di M, la curva verde tende ad approssimarsi molto bene alla curva blu $N^2$.
-Questo è in linea con le ipotesi teoriche in quanto il ciclo utilizzato dall'algoritmo dovrà verificare, per ogni riga
-della matrice A, tutte le unioni tra quest'ultima e tutte le precedenti (prima prese a coppie, poi ad insiemi di tre, quattro, ...)
-fino a che non si trovano righe incompatibili oppure che unite tra loro formano l'insieme M. 
+Notiamo come, all'aumentare della cardinalità di M, la curva verde tende ad approssimarsi alla curva di $N^3$.
+Questo va a denotare come il numero di nodi visitati tende ad aumentare in maniera esponenziale al crescere della
+cardinalità di M e N. Lo studio della vera e propria complessità spaziale (quindi dello spazio occupato in RAM dall'algoritmo)
+non mi è stato possibile in quanto non c'è un metodo in Python che permetta di capire quanto lo script stia occupando
+come memoria RAM del dispositivo; ho quindi pensato di poterla approssimare con il numero totale di nodi che l'algoritmo ha
+dovuto visitare durante la sua esecuzione.
 
 ![](./img/Visited.gif)
 
