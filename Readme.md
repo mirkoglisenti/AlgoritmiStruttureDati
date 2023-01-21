@@ -468,4 +468,4 @@ attivo e interessante, dove si può veramente dire che *il tempo è denaro* in q
 che viene usato per la risoluzione del problema è veramente una risorsa critica e la sua
 minimizzazione deve essere una delle principali preoccupazioni di tutti i programmatori!
 
-&copy; Glisenti Mirko - Università degli Studi di Brescia (2022)
+&copy; Glisenti Mirko - Mat: 723210 - Università degli Studi di Brescia (2022)
