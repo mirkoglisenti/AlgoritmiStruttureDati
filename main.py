@@ -6,6 +6,7 @@ import sys
 from threading import Thread
 import keyboard
 import os
+import tracemalloc
 
 sys.setrecursionlimit(2147483647)
 
@@ -79,7 +80,6 @@ class EC(Thread):
                             if len(Inter) > 0 and (Inter != np.zeros(len(Inter), dtype=int)).any():
                                 self.esplora(I, U, Inter)
 
-    # @njit
     def esplora(self, I, U, Inter):
         for k in range(0, len(Inter)):
             if self.stop:
@@ -122,6 +122,7 @@ args = parser.parse_args()
 
 if __name__ == '__main__':
 # def main(ecplus = False):
+    tracemalloc.start()
     file = open(args.input, "r")
     A = []
     for line in file:
@@ -201,6 +202,7 @@ if __name__ == '__main__':
     file.write(';;; Total nodes: ' + str(ec.totalNodes) + ' \n')
     file.write(';;; Visited nodes: ' + str(ec.visitedNodes) + ' \n')
     file.write(';;; Percentage of nodes visited: ' + str(round((ec.visitedNodes / ec.totalNodes) * 100, 2)) + ' \n')
+    file.write(';;; RAM occupage: ' + str(tracemalloc.get_traced_memory()[1]) + ' bytes\n')
     file.close()
 
     uid = int(os.environ.get('SUDO_UID'))
@@ -210,4 +212,8 @@ if __name__ == '__main__':
 
     print('Fatto!\nTermino la mia esecuzione')
 
-    # return execution_time, ec.visitedNodes
+    # ram = tracemalloc.get_traced_memory()[1]
+
+    tracemalloc.stop()
+
+    # return execution_time, ec.visitedNodes, ram

@@ -171,7 +171,7 @@ Viene usata la distribuzione binomiale a probabilità variabile (default $0.5$) 
 il file di input. Ho scelto questa tipologia di distribuzione per gestire al meglio la
 probabilità con la quale voglio che la matrice di input sia riempita con zero o uno.
 Se, ad esempio, si richieda una generazione di file di input con probabilità $0.5$ si otterrà un file
-che ogni elemeto di ogni riga della matrice A avrà il 50% di probabilità di essere un $1$ e il 50% di probabilità
+che ogni elemento di ogni riga della matrice A avrà il 50% di probabilità di essere un $1$ e il 50% di probabilità
 di essere uno $0$.
 Per approfondimenti clicca [qui](https://it.wikipedia.org/wiki/Distribuzione_binomiale).
 
@@ -296,50 +296,6 @@ Li riporto qua sotto e poi andrò ad analizzarli.
 |:------------------------:|
 | *Cardinalità di M = 14)* |
 
-| ![](./img/exec_M_15.png) |
-|:------------------------:|
-| *Cardinalità di M = 15)* |
-
-| ![](./img/exec_M_16.png) |
-|:------------------------:|
-| *Cardinalità di M = 16)* |
-
-| ![](./img/exec_M_17.png) |
-|:------------------------:|
-| *Cardinalità di M = 17)* |
-
-| ![](./img/exec_M_18.png) |
-|:------------------------:|
-| *Cardinalità di M = 18)* |
-
-| ![](./img/exec_M_19.png) |
-|:------------------------:|
-| *Cardinalità di M = 19)* |
-
-| ![](./img/exec_M_20.png) |
-|:------------------------:|
-| *Cardinalità di M = 20)* |
-
-| ![](./img/exec_M_21.png) |
-|:------------------------:|
-| *Cardinalità di M = 21)* |
-
-| ![](./img/exec_M_22.png) |
-|:------------------------:|
-| *Cardinalità di M = 22)* |
-
-| ![](./img/exec_M_23.png) |
-|:------------------------:|
-| *Cardinalità di M = 23)* |
-
-| ![](./img/exec_M_24.png) |
-|:------------------------:|
-| *Cardinalità di M = 24)* |
-
-| ![](./img/exec_M_25.png) |
-|:------------------------:|
-| *Cardinalità di M = 25)* |
-
 ![](./img/Exec.gif)
 
 Notiamo come i tempi di esecuzione di EC ed EC+ non sembrino sostanzialmente diversi, questo è dovuto al fatto che la modifica
@@ -402,50 +358,6 @@ possiamo approssimare la complessità temporale di entrambi gli algoritmi con un
 | ![](./img/visited_M_14.png) |
 |:---------------------------:|
 |  *Cardinalità di M = 14)*   |
-
-| ![](./img/visited_M_15.png) |
-|:---------------------------:|
-|  *Cardinalità di M = 15)*   |
-
-| ![](./img/visited_M_16.png) |
-|:---------------------------:|
-|  *Cardinalità di M = 16)*   |
-
-| ![](./img/visited_M_17.png) |
-|:---------------------------:|
-|  *Cardinalità di M = 17)*   |
-
-| ![](./img/visited_M_18.png) |
-|:---------------------------:|
-|  *Cardinalità di M = 18)*   |
-
-| ![](./img/visited_M_19.png) |
-|:---------------------------:|
-|  *Cardinalità di M = 19)*   |
-
-| ![](./img/visited_M_20.png) |
-|:---------------------------:|
-|  *Cardinalità di M = 20)*   |
-
-| ![](./img/visited_M_21.png) |
-|:---------------------------:|
-|  *Cardinalità di M = 21)*   |
-
-| ![](./img/visited_M_22.png) |
-|:---------------------------:|
-|  *Cardinalità di M = 22)*   |
-
-| ![](./img/visited_M_23.png) |
-|:---------------------------:|
-|  *Cardinalità di M = 23)*   |
-
-| ![](./img/visited_M_24.png) |
-|:---------------------------:|
-|  *Cardinalità di M = 24)*   |
-
-| ![](./img/visited_M_25.png) |
-|:---------------------------:|
-|  *Cardinalità di M = 25)*   |
 
 
 Notiamo come, all'aumentare della cardinalità di M, la curva verde tende ad approssimarsi alla curva di $N^3$.
