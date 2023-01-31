@@ -16,6 +16,7 @@ Progetto per il corso "Algoritmi e Strutture Dati" per la laurea magistrale in I
 * [Grafici](#grafici)
   * [Tempo di esecuzione](#tempo-di-esecuzione)
   * [Numero di nodi visitati](#numero-di-nodi-visitati)
+  * [Occupazione di memoria RAM](#occupazione-di-memoria-ram)
 * [Conclusioni](#conclusioni)
 <!-- TOC -->
 
@@ -51,6 +52,7 @@ un ulteriore file di testo che riporta:
 - Il numero totale di nodi dell'albero esplorabili
 - Il numero di nodi dell'albero esplorati
 - La percentuale di nodi esplorati
+- L'occupazione di memoria RAM dello script
 
 La struttura di un file di input da fornire all'algoritmo `main.py` è questa:
 
@@ -101,7 +103,8 @@ La struttura del file di output che l'algoritmo fornisce è questa:
 ;;; Execution time: 0.416 s (0.007 minutes) 
 ;;; Total nodes: 256 
 ;;; Visited nodes: 40 
-;;; Percentage of nodes visited: 15.62 
+;;; Percentage of nodes visited: 15.62
+;;; RAM Occupage: 113115 bytes
 
 ```
 
@@ -116,8 +119,8 @@ Il primo file è il responsabile del vero e proprio algoritmo EC ed EC+, il seco
 responsabile della creazione di file di input casuali e il terzo è responsabile della verifica dell'uguaglianza tra la soluzione proposta
 da EC e quella proposta da EC+.
 
-Le strutture dati utilizzate sono gli array offerti da NumPy. Ogni elemento dell'array occupa 4 byte di memoria quindi,
-ad esempio, per una matrice A di 10x10, una matrice B di 10x10 e un'insieme COV di una copertura formata da 10 righe della
+Le strutture dati utilizzate sono gli array offerti da NumPy. Ogni elemento dell'array occupa quattro byte di memoria quindi,
+ad esempio, per una matrice A di 10x10, una matrice B di 10x10 e un insieme COV di una copertura formata da 10 righe della
 matrice A, avremo:
 - $10 * 10 * 4 = 400$ byte +
 - $10 * 10 * 4 = 400$ byte +
@@ -219,7 +222,7 @@ efficiente di matrici e vettori e che rende disponibili diverse funzioni per le 
 ## Test
 
 Ho eseguito vari test automatici per verificare il corretto funzionamento degli algoritmi EC
-ed EC+. I test sono stati eseguiti per valori di M compresi tra $2$ e $25$ e valori di N calcolati
+ed EC+. I test sono stati eseguiti per valori di M compresi tra $2$ e $14$ e valori di N calcolati
 ad-hoc per avere un numero di esecuzioni valido per creare un grafico significativo (circa $30$ valori di N 
 diversi per testare l'algoritmo al crescere del numero delle righe della matrice A).
 
@@ -229,13 +232,13 @@ e che la riga contenente solo zeri non potesse essere generata.
 
 Inoltre i file di input per questi test sono stati "forzati" per contenere una matrice diagonale di dimensione M, in modo
 da portare il programma alla profondità massima di ricorsione. Ho deciso di creare questi file di input per testare come
-l'algoritmo si comporta quando, per generare un copertura dell'insieme COV, deve aggreggare il numero massimo possibile
+l'algoritmo si comporta quando, per generare un copertura dell'insieme COV, deve aggregare il numero massimo possibile
 di righe della matrice A (questo numero coincide con la cardinalità di M).
 
 ## Grafici
 
-Ho creato vari grafici per riportare il numero di nodi visitati (complessità spaziale dell'algoritmo) e il tempo di esecuzione totale
-dell'algoritmo (complessità temporale) al variare della cardinalità di N (numero di insiemi di elementi del dominio M).
+Ho creato vari grafici per riportare il numero di nodi visitati, l'occupazione di memoria RAM (complessità spaziale)
+e il tempo di esecuzione totale dell'algoritmo (complessità temporale) al variare della cardinalità di N (numero di insiemi di elementi del dominio M).
 
 I grafici sono stati creati con la libreria Matplotlib di Python e usano la scala logaritmica per l'asse
 delle y in modo da poter notare più facilmente il comportamento delle curve.
@@ -362,12 +365,68 @@ possiamo approssimare la complessità temporale di entrambi gli algoritmi con un
 
 Notiamo come, all'aumentare della cardinalità di M, la curva verde tende ad approssimarsi alla curva di $N^3$.
 Questo va a denotare come il numero di nodi visitati tende ad aumentare in maniera esponenziale al crescere della
-cardinalità di M e N. Lo studio della vera e propria complessità spaziale (quindi dello spazio occupato in RAM dall'algoritmo)
-non mi è stato possibile in quanto non c'è un metodo in Python che permetta di capire quanto lo script stia occupando
-come memoria RAM del dispositivo; ho quindi pensato di poterla approssimare con il numero totale di nodi che l'algoritmo ha
-dovuto visitare durante la sua esecuzione.
+cardinalità di M e N.
 
 ![](./img/Visited.gif)
+
+### Occupazione di memoria RAM
+
+| ![](./img/RAM_M_2.png)  |
+|:-----------------------:|
+| *Cardinalità di M = 2)* |
+
+| ![](./img/RAM_M_3.png)  |
+|:-----------------------:|
+| *Cardinalità di M = 3)* |
+
+| ![](./img/RAM_M_4.png)  |
+|:-----------------------:|
+| *Cardinalità di M = 4)* |
+
+| ![](./img/RAM_M_5.png)  |
+|:-----------------------:|
+| *Cardinalità di M = 5)* |
+
+| ![](./img/RAM_M_6.png)  |
+|:-----------------------:|
+| *Cardinalità di M = 6)* |
+
+| ![](./img/RAM_M_7.png)  |
+|:-----------------------:|
+| *Cardinalità di M = 7)* |
+
+| ![](./img/RAM_M_8.png)  |
+|:-----------------------:|
+| *Cardinalità di M = 8)* |
+
+| ![](./img/RAM_M_9.png)  |
+|:-----------------------:|
+| *Cardinalità di M = 9)* |
+
+| ![](./img/RAM_M_10.png)  |
+|:------------------------:|
+| *Cardinalità di M = 10)* |
+
+| ![](./img/RAM_M_11.png)  |
+|:------------------------:|
+| *Cardinalità di M = 11)* |
+
+| ![](./img/RAM_M_12.png)  |
+|:------------------------:|
+| *Cardinalità di M = 12)* |
+
+| ![](./img/RAM_M_13.png)  |
+|:------------------------:|
+| *Cardinalità di M = 13)* |
+
+| ![](./img/RAM_M_14.png)  |
+|:------------------------:|
+| *Cardinalità di M = 14)* |
+
+
+jbb
+
+![](./img/RAM.gif)
 
 ## Conclusioni
 
