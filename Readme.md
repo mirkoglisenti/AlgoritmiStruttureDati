@@ -415,15 +415,6 @@ cardinalità di M e N.
 |:------------------------:|
 | *Cardinalità di M = 12)* |
 
-| ![](./img/RAM_M_13.png)  |
-|:------------------------:|
-| *Cardinalità di M = 13)* |
-
-| ![](./img/RAM_M_14.png)  |
-|:------------------------:|
-| *Cardinalità di M = 14)* |
-
-
 jbb
 
 ![](./img/RAM.gif)
