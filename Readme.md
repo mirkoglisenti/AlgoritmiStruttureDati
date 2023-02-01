@@ -415,15 +415,18 @@ cardinalità di M e N.
 |:------------------------:|
 | *Cardinalità di M = 12)* |
 
-jbb
+Notiamo come, all'aumentare della cardinalità di M, le curve verde e rossa tendono ad approssimarsi alla curva di $N^3$.
+Questo va a denotare come la complessità spaziale (occupazione di memoria RAM) tende ad aumentare in maniera
+esponenziale al crescere della cardinalità di M e N. Possiamo quindi approssimare la complessità spaziale di entrambi
+gli algoritmi con un $O(N^3)$.
 
 ![](./img/RAM.gif)
 
 ## Conclusioni
 
-Ho notato come all'aumentare di M e N le complessità temporali e spaziali tendono
+Notiamo come all'aumentare di M e N le complessità temporali e spaziali tendono
 ai valori teorici espressi dalla matematica di questo problema NP completo. L'analisi e la
-realizzazione di un algoritmo (seguendo le pseudocodice fornito dalla Prof.ssa Zanella) 
+realizzazione di un algoritmo (seguendo le pseudocode fornito dalla prof.ssa Marina Zanella) 
 risolvente questo problema mi ha permesso di capire meglio come la realizzazione di algoritmi
 a bassa complessità spaziale e temporale sia un campo di studio e settore di ricerca molto
 attivo e interessante, dove si può veramente dire che *il tempo è denaro* in quanto il CPU Time
