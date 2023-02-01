@@ -10,3 +10,4 @@ bk.py
 log*
 bk
 plot.py
+*.pdf
