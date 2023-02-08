@@ -18,9 +18,9 @@ if __name__ == '__main__':
     A = np.empty((N, M), dtype=int)
     init = 0
 
-    if M <= N:
-        A[0:M] = np.eye(M, dtype=int)
-        init = M
+    # if M <= N:
+    #     A[0:M] = np.eye(M, dtype=int)
+    #     init = M
 
     for i in range(init, N):
         nums = np.random.binomial(1, P, M)  # Distribuzione binomiale con percentuale P che esca 0 oppure 1
